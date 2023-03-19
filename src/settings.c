@@ -41,6 +41,20 @@
 /* Dirty hack: check whether we are under LXDE or not */
 #define is_under_LXDE()     (g_getenv( "_LXSESSION_PID" ) != NULL)
 
+XSet* evt_win_focus;
+XSet* evt_win_move;
+XSet* evt_win_click;
+XSet* evt_win_key;
+XSet* evt_win_close;
+XSet* evt_pnl_show;
+XSet* evt_pnl_focus;
+XSet* evt_pnl_sel;
+XSet* evt_tab_new;
+XSet* evt_tab_focus;
+XSet* evt_tab_close;
+XSet* evt_device;
+GList* xset_cmd_history;
+
 AppSettings app_settings = {0};
 /* const gboolean singleInstance_default = TRUE; */
 const gboolean show_hidden_files_default = FALSE;

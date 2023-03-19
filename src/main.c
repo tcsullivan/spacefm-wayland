@@ -30,6 +30,8 @@
 
 #include <locale.h>
 
+#include <sys/sysmacros.h>
+
 #include "main-window.h"
 
 #include "vfs-file-info.h"
